@@ -1,6 +1,6 @@
 package org.lessons.java;
 
-public class Delfino extends Animale {
+public class Delfino extends Animale implements INuotante {
     // costruttore
     public Delfino(String verso, String cibo) {
         // richiamo il costruttore della superclasse
@@ -16,5 +16,10 @@ public class Delfino extends Animale {
     @Override
     public void mangia() {
         System.out.println("Il delfino mangia: " + this.cibo);
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("Sto nuotando!!!");
     }
 }

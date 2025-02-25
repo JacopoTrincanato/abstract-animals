@@ -1,6 +1,6 @@
 package org.lessons.java;
 
 public interface IVolante {
-    // aggiungo i metodi astratti
-    public abstract void vola();
+    // aggiungo i metodi
+    public void vola();
 }

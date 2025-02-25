@@ -1,6 +1,6 @@
 package org.lessons.java;
 
-public class Aquila extends Animale {
+public class Aquila extends Animale implements IVolante {
     // costruttore
     public Aquila(String verso, String cibo) {
         // richiamo il costruttore della superclasse
@@ -16,5 +16,10 @@ public class Aquila extends Animale {
     @Override
     public void mangia() {
         System.out.println("l'aquila mangia: " + this.cibo);
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!!!");
     }
 }
